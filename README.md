@@ -19,6 +19,31 @@ Para ejecutar este proyecto localmente, asegúrate de tener Java, Docker y Docke
 
 1. Clona este repositorio:
 
+git clone https://github.com/Aensil/Springboot-API---Docker.git
 
 2. Navega hasta el directorio del proyecto:
 
+cd Springboot-API---Docker/dealer
+
+3. Construye la imagen de Docker:
+
+docker build -t springboot-api .
+
+4. Después de construir la imagen, ejecuta el siguiente comando para levantar los contenedores:
+
+
+El comando `docker-compose up` configurará tanto la API de Spring Boot como la base de datos MySQL en contenedores Docker interconectados.
+
+## Uso
+
+Una vez que los contenedores estén en funcionamiento, puedes acceder a la API de Spring Boot a través de `http://localhost:8080`. Utiliza herramientas como Postman o tu navegador web para interactuar con los endpoints de la API.
+
+## Contribuciones
+
+¡Las contribuciones son siempre bienvenidas! Si tienes alguna idea o mejora, abre un issue o un pull request.
+
+1. Haz un fork del repositorio.
+2. Crea tu rama de funcionalidad (`git checkout -b feature/AmazingFeature`).
+3. Haz commit de tus cambios (`git commit -m 'Agrega una característica increíble'`).
+4. Haz push a la rama (`git push origin feature/AmazingFeature`).
+5. Abre un pull request.
