@@ -1,7 +1,5 @@
 # Springboot-Docker-API-MySQL
 
-# Springboot API con Docker y MySQL
-
 Este repositorio contiene una API simple de Spring Boot junto con la configuración de Docker para la contenerización, además de una integración con MySQL.
 
 ## Descripción
@@ -19,20 +17,29 @@ Para ejecutar este proyecto localmente, asegúrate de tener Java, Docker y Docke
 
 1. Clona este repositorio:
 
+```bash
 git clone https://github.com/Aensil/Springboot-Docker-API-MySQL.git
+```
 
 2. Navega hasta el directorio del proyecto:
 
+```bash
 cd Springboot-Docker-API-MySQL/dealer
+```
 
 3. Construye la imagen de Docker:
 
+```bash
 docker build -t springboot-api .
+```
 
 4. Después de construir la imagen, ejecuta el siguiente comando para levantar los contenedores:
 
+```bash
+docker-compose up -d
+```
 
-El comando `docker-compose up` configurará tanto la API de Spring Boot como la base de datos MySQL en contenedores Docker interconectados.
+Este comando configurará tanto la API de Spring Boot como la base de datos MySQL en contenedores Docker interconectados.
 
 ## Uso
 
