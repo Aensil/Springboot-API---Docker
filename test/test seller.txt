@@ -1,0 +1,65 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "John Doe",
+  "nit": "123456789",
+  "address": "123 Main St",
+  "phone": 12347890
+}' http://localhost:8080/seller
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Jane Smith",
+  "nit": "987654321",
+  "address": "456 Oak Ave",
+  "phone": 765210
+}' http://localhost:8080/seller
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Karol Smith",
+  "nit": "123456789",
+  "address": "33 Pk street Lane",
+  "phone": 12345890
+}' http://localhost:8080/seller
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Emily Johnson",
+  "nit": "1719232425",
+  "address": "852 Maple St",
+  "phone": 9876210
+}' http://localhost:8080/seller
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Michael Brown",
+  "nit": "334455667",
+  "address": "567 Elm Ave",
+  "phone": 87609
+}' http://localhost:8080/seller
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Sarah Miller",
+  "nit": "998877665",
+  "address": "789 Pine St",
+  "phone": 123054
+}' http://localhost:8080/seller
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Alex Davis",
+  "nit": "876543211",
+  "address": "111 Cedar Ave",
+  "phone": 192450
+}' http://localhost:8080/seller
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Olivia Wilson",
+  "nit": "674829102",
+  "address": "222 Oak St",
+  "phone": 9081354
+}' http://localhost:8080/seller
+
+
+curl http://localhost:8080/seller
+
+curl http://localhost:8080/seller/2
+
+curl -X PUT -H "Content-Type: application/json" -d 333333 http://localhost:8080/seller/2
+
+curl -X DELETE http://localhost:8080/seller/1
+

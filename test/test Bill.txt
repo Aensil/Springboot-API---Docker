@@ -1,0 +1,52 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 3,
+    "idSeller": 3,
+    "idCar": 2,
+    "idCarRecieve": 3,
+    "date": "2023-10-18",
+    "totalPrice": 1000.50
+}' http://localhost:8080/bill
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 4,
+    "idSeller": 4,
+    "idCar": 3,
+    "idCarRecieve": 4,
+    "date": "2023-10-18",
+    "totalPrice": 1500.75
+}' http://localhost:8080/bill
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 3,
+    "idSeller": 5,
+    "idCar": 4,
+    "idCarRecieve": 4,
+    "date": "2023-10-18",
+    "totalPrice": 2000.80
+}' http://localhost:8080/bill
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 4,
+    "idSeller": 4,
+    "idCar": 3,
+    "idCarRecieve": 4,
+    "date": "2023-10-18",
+    "totalPrice": 2500.25
+}' http://localhost:8080/bill
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 5,
+    "idSeller": 5,
+    "idCar": 5,
+    "idCarRecieve": 3,
+    "date": "2023-10-18",
+    "totalPrice": 3500.40
+}' http://localhost:8080/bill
+
+curl http://localhost:8080/bill
+
+curl http://localhost:8080/bill/2
+
+curl -X PUT -H "Content-Type: application/json" -d 25000.0 http://localhost:8080/bill/2
+
+curl -X DELETE http://localhost:8080/bill/1

@@ -1,0 +1,45 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 5,
+    "brand": "Toyota",
+    "cc": 2000,
+    "priceTaken": 15000.0,
+    "model": "Corolla",
+    "date": "2023-10-15"
+}' http://localhost:8080/usecar
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 2,
+    "brand": "Honda",
+    "cc": 1800,
+    "priceTaken": 14000.0,
+    "model": "Civic",
+    "date": "2023-10-15"
+}' http://localhost:8080/usecar
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 3,
+    "brand": "Ford",
+    "cc": 2500,
+    "priceTaken": 18000.0,
+    "model": "Fusion",
+    "date": "2023-10-15"
+}' http://localhost:8080/usecar
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "idClient": 4,
+    "brand": "Chevrolet",
+    "cc": 2200,
+    "priceTaken": 16000.0,
+    "model": "Malibu",
+    "date": "2023-10-15"
+}' http://localhost:8080/usecar
+
+curl http://localhost:8080/usecar
+
+curl http://localhost:8080/usecar/2
+
+curl -X PUT -H "Content-Type: application/json" -d 20000.0 http://localhost:8080/usecar/2
+
+curl -X DELETE http://localhost:8080/usecar/1

@@ -1,0 +1,21 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "idSell": 2,
+  "idOption": 2
+}' http://localhost:8080/alloptions
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "idSell": 2,
+  "idOption": 4
+}' http://localhost:8080/alloptions
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "idSell": 3,
+  "idOption": 2
+}' http://localhost:8080/alloptions
+
+curl http://localhost:8080/alloptions
+
+curl http://localhost:8080/alloptions/2
+
+curl -X DELETE http://localhost:8080/alloptions/1

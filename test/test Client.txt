@@ -1,0 +1,37 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Liam Garcia",
+  "nit": "122333444",
+  "address": "333 Walnut Ave",
+  "phone": 5432160
+}' http://localhost:8080/client
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Alice Smith",
+  "nit": "24681012",
+  "address": "94 Rlm St",
+  "phone": 1357980
+}' http://localhost:8080/client
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Michael Johnson",
+  "nit": "369121518",
+  "address": "789 Maple St",
+  "phone": 1357980
+}' http://localhost:8080/client
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "name": "Michael Johnson",
+  "nit": "369121518",
+  "address": "789 Maple St",
+  "phone": 135790
+}' http://localhost:8080/client
+
+
+curl http://localhost:8080/client
+
+curl http://localhost:8080/client/2
+
+curl -X PUT -H "Content-Type: application/json" -d 333333 http://localhost:8080/client/2
+
+curl -X DELETE http://localhost:8080/client/1

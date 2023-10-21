@@ -1,0 +1,32 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "brand": "Honda",
+  "cc": 1200,
+  "price": 15000.0,
+  "model": "Civic"
+}' http://localhost:8080/car
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "brand": "Toyota",
+  "cc": 1500,
+  "price": 20000.0,
+  "model": "Corolla"
+}' http://localhost:8080/car
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "brand": "Toyota",
+    "cc": 1800,
+    "price": 25000.0,
+    "model": "Camry"
+}' http://localhost:8080/car
+
+curl http://localhost:8080/car
+
+curl http://localhost:8080/car/2
+
+
+
+curl -X PUT -H "Content-Type: application/json" -d 25000.0 http://localhost:8080/car/2
+
+curl -X DELETE http://localhost:8080/car/1
