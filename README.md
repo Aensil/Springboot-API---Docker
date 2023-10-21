@@ -19,11 +19,11 @@ Para ejecutar este proyecto localmente, asegúrate de tener Java, Docker y Docke
 
 1. Clona este repositorio:
 
-git clone https://github.com/Aensil/Springboot-API---Docker.git
+git clone https://github.com/Aensil/Springboot-Docker-API-MySQL.git
 
 2. Navega hasta el directorio del proyecto:
 
-cd Springboot-API---Docker/dealer
+cd Springboot-Docker-API-MySQL/dealer
 
 3. Construye la imagen de Docker:
 
